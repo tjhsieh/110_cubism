@@ -1,0 +1,138 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>卷積神經網路動作捕捉系統插圖動畫應用</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.lp.css">
+	<link rel="stylesheet" type="text/css" href="css/landing-page.css">
+    <link href='http://fonts.googleapis.com/earlyaccess/cwtexfangsong.css' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+    h1 {
+        font-family: 'cwTeXFangSong';
+    }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="http://www.cc.ntut.edu.tw/~tjhsieh/">國立臺北科技大學資訊工程系計算機圖學實驗室</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">首頁</a>
+                    </li>
+					<!-- <li>
+                        <a href="html/system_build.html">系統建置</a>
+                    </li> -->
+					
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Header -->
+    <a name="top"></a>
+    <div class="intro-header">
+        <div class="container" style="height:500px;">
+            <div class="row">
+                <div class="col-lg-12" style="height:500px;">
+                    <div class="intro-message" style="position: relative;padding-top: 0%;padding-bottom: 70%;">
+                        <h1 stroke="#000000" stroke-width="2px">卷積神經網路動作捕捉系統插圖動畫應用</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Content -->
+	<a  name="demo_original"></a>
+	<div class="content-section-a">
+        <div class="container">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+
+					<h2 class="section-heading">摘要</h2>
+                    <p style="font-size: 18px">
+                        近年來隨著動作捕捉技術的增進，硬體設備需求隨之降低，
+                        相關產業如電影拍攝、動畫製作、虛擬主播等更貼近於平常的生活中。
+                        其中以虛擬主播最為貼近也最廣為人知，從絆愛到HOLOLIVE皆可看出龐大的商機。
+                        虛擬主播除了動作捕捉的技術之外，還有虛擬角色模型製作、操作的需求。
+                        虛擬角色分為3D與2.5D模型，除了風格的差異之外，在製作技術與操作概念也相差甚多。
+                        而3D模型由於操作直觀，使之在研究上使用廣泛，相較之下2.5D則鮮少有相關之研究。
+                        本論文基於上述之原因，以現有基於機器學習之動作捕捉技術與2.5D角色模型為基礎，
+                        使用Unity開發一套虛擬主播操控系統，轉換動作捕捉與模型參數。
+                        同時研究動作捕捉技術與2.5D角色模型的限制，並探討後續研究的方向。
+                    </p>
+                </div>
+
+                <div class="col-lg-6 col-sm-6 m-0">
+                    <img class="img-responsive m-0" src="img/result.png"  alt="" width="100%">
+
+                </div>
+            </div>
+            <div>
+                <hr class="section-heading-spacer">                    
+                <h2 class="section-heading">系統流程圖</h2>
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                        <ol type="1">
+                            <li>使用網路攝影機拍攝使用者</li>
+                            <li>藉由MediaPipe找出使用者</li>
+                            <li>將使用者特徵點提取出來</li>
+                            <li>將提取的特徵點轉換運算</li>
+                            <li>將運算值輸出給模型控制使用</li>
+                        </ol>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <img class="img-responsive m-0" src="img/system.png"  alt="" width="100%">
+                    </div>
+                </div>       
+            </div>
+            <div>
+                <hr class="section-heading-spacer">                    
+                <h2 class="section-heading">系統呈現</h2>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="video/demo.mp4" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <hr class="section-heading-spacer">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="copyright text-muted small"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="創用 CC 授權條款" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type"></span><br>
+			卷積神經網路動作捕捉系統插圖動畫應用<a xmlns:cc="http://creativecommons.org/ns#" href="http://www.cc.ntut.edu.tw/~tjhsieh/" property="cc:attributionName" rel="cc:attributionURL">國立臺北科技大學資訊工程系計算機圖學實驗室</a>製作，
+			以<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">創用CC 姓名標示-非商業性-相同方式分享 4.0 國際 授權條款</a>釋出。
+			姓名標示-非商業性-相同方式分享 CC BY-NC-SA
+			本授權條款允許使用者對本著作進行重混、調整，以及依原著作建立新著作，但僅限於非商業目的之使用。唯使用者就其新創著作，必須按照表彰
+			原作：國立臺北科技大學資訊工程系計算機圖學實驗室，並且將產出之新創著作採用相同的授權條款釋出。</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="lib/jquery-2.1.3.min.js"></script>
+<script src="lib/bootstrap.min.js"></script>
+</html>
